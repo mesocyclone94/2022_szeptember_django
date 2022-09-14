@@ -20,3 +20,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls'))
 ]
+
+"""
+server nevét - weboldal nevét: 127.0.0.1:8000 vagy localhost:8000 -->
+majd a project mappa urls.py-ból a megfelelő url-hez - ha az inclusde van
+akkor az aktuális applikáció urls.py file-jában megkeresi az url-t és behelyettesíti az ott megadott értéket
+
+
+"""
