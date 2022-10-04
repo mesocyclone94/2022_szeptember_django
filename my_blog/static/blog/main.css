@@ -1,0 +1,53 @@
+body {
+    background: lightgreen;
+    color: black;
+    margin-top: 80px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: lightcoral;
+}
+
+.bg-steel {
+    background-color: lightblue;
+}
+
+.article-metadata {
+    padding: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid blueviolet;
+}
+
+.article-title {
+    color: darkorange;
+}
+
+.article-title:hover {
+    white-space: pre-line;
+    color: chartreuse;
+}
+
+.article-content {
+    white-space: pre-line;
+    color: darkslateblue;
+}
+
+.content-section {
+    background: whitesmoke;
+    padding: 10px 20px;
+    border: 1px solid darkslategray;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.site-header .navbar-nav .nav-link {
+    color: green;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.site-header .navbar-nav .nav-link:hover:active {
+    font-weight: 500;
+}
