@@ -1,1 +1,1 @@
-# 2022_szeptember_django
+# 2022_szeptember_django_ui
