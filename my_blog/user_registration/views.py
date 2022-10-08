@@ -1,3 +1,4 @@
+import re
 from django.shortcuts import render, redirect
 from .forms import UserRegisterForm
 from django.contrib import messages
@@ -28,3 +29,6 @@ def register(request):
         'form': form
     }
     return render(request, 'user/register.html', context=context)
+
+def profile_view(request):
+    return render(request, 'user/profile.html')
