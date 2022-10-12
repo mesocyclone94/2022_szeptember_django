@@ -27,9 +27,6 @@ def register(request):
             # username = form.cleaned_data.get('username')
             # usr_obj = User.objects.filter(username=username).first()
             # prof_temp = ProfileModel.objects.create(user_id=usr_obj.pk)
-
-            
-
             messages.success(request, "Your account has  been created! You are able")
             return redirect('login')
     else:
