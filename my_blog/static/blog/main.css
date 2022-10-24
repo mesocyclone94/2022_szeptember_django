@@ -1,5 +1,5 @@
 body {
-    background: lightgreen;
+    background: black;
     color: black;
     margin-top: 80px;
 }
@@ -15,16 +15,16 @@ h1, h2, h3, h4, h5, h6 {
 .article-metadata {
     padding: 1px;
     margin-bottom: 4px;
-    border-bottom: 1px solid blueviolet;
+    border-bottom: 1px solid rgb(22, 2, 40);
 }
 
 .article-title {
-    color: darkorange;
+    color: blue;
 }
 
 .article-title:hover {
     white-space: pre-line;
-    color: chartreuse;
+    color: black;
 }
 
 .article-content {
@@ -33,15 +33,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content-section {
-    background: whitesmoke;
+    background: rgb(136, 226, 169);
     padding: 10px 20px;
-    border: 1px solid darkslategray;
+    border: 1px solid rgb(88, 215, 215);
     border-radius: 3px;
     margin-bottom: 20px;
 }
 
 .site-header .navbar-nav .nav-link {
-    color: green;
+    color: rgb(236, 25, 25);
 }
 
 .site-header .navbar-nav .nav-link:hover {
