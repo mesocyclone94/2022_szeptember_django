@@ -1,6 +1,11 @@
 from django.shortcuts import render
 from .models import PostsModel
-from django.views.generic import ListView, DetailView, CreateView, UpdateView
+from django.views.generic import (ListView, 
+                                    DetailView, 
+                                    CreateView, 
+                                    UpdateView, 
+                                    DeleteView,
+                                )
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 # Create your views here.
 """
@@ -24,6 +29,8 @@ class PostListView(ListView):
     model = PostsModel
     template_name = 'blog/home.html'
     context_object_name = 'posts'
+    ordering = ['date_posted']
+    paginate_by = 2
 
 class PostDetailView(DetailView):
 
@@ -52,4 +59,17 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         post = self.get_object()
         if self.request.user == post.author:
             return True
-        return False        
+        return False
+
+class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+
+    model = PostsModel
+    template_name = 'blog/post_delete.html'
+    success_url = "/"
+
+    def test_func(self):
+
+        post = self.get_object()
+        if self.request.user == post.author:
+            return True
+        return False          
